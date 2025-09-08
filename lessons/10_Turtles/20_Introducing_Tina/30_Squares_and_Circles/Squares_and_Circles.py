@@ -31,19 +31,19 @@ tina.pendown()                          # Put the pen down so we can draw
 
 
 tina.pencolor('blue')                   # Set the pen color to blue
-tina.forward(200)                       # Move tina forward by the forward distance
+tina.forward(100)                       # Move tina forward by the forward distance
 tina.right(90)                          # Turn tina left by the left turn
 
 tina.pencolor('red')                    # Set the pen color to red
-tina.forward(200)                       # Continuie the last two steps three more times
+tina.forward(100)                       # Continuie the last two steps three more times
 tina.right(90)                           # to draw a square
 
 tina.pencolor('green')                  # Set the pen color to green
-tina.forward(200)
+tina.forward(100)
 tina.right(90)
 
 tina.pencolor('purple')                 # Set the pen color to purple
-tina.forward(200)
+tina.forward(100)
 tina.right(90)
 
 ##
@@ -57,7 +57,7 @@ tina.pendown()
 tina.pendown()
 tina.color('red')                       # Set the color of tina to red
 tina.begin_fill()
-tina.circle(75)
+tina.circle(175)
 tina.end_fill()
 
 ##
