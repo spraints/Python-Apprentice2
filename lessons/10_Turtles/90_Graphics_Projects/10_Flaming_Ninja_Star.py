@@ -40,7 +40,7 @@ for i in range(25):
    
     t.begin_fill()
 
-    t.forward(64) 
+    t.forward(264) 
 
     t.left(40) 
 
@@ -58,4 +58,4 @@ for i in range(25):
 
 t.hideturtle() 
 
-turtle.done() 
+turtle.exitonclick() 

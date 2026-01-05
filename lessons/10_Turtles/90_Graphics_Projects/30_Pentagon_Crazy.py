@@ -11,7 +11,7 @@ def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
 
 def getNextColor(i):
-    return colors[i % len(colors)]
+    return colors[i % sides % len(colors)]
 
 window = turtle.Screen()
 window.bgcolor("black")
@@ -24,7 +24,7 @@ myTurtle.shape("turtle")
 myTurtle.speed(0)
 myTurtle.width(1)
 
-sides = 5
+sides = 12
 angle = 360 / sides
 
 for i in range(360):
@@ -33,9 +33,9 @@ for i in range(360):
     if i == 200:
         myTurtle.width(3)
     myTurtle.pencolor(getNextColor(i))
-    myTurtle.forward(i)
-    myTurtle.right(angle + 1)
+    myTurtle.forward(1+(4*i)//sides)
+    myTurtle.right(angle+1)
 
 myTurtle.hideturtle()
 
-turtle.done()
+turtle.exitonclick()
