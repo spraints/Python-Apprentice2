@@ -12,6 +12,10 @@ words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the',
 story = []
 
 # Create a story using the words in the list
+story = words[:]
+import random
+random.shuffle(words)
 
 # Display the story to the user
 print(' '.join(story))
+print(' '.join(words))
